@@ -12,6 +12,9 @@ const List = (props) => {
                     size = {item.size}
                     price = {item.price}
                     quantity = {item.quantity}
+                    toggle = {props.toggle}
+                    completed = {item.completed}
+                    remove = {props.remove}
                     />
             )
         })
