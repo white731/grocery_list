@@ -10,11 +10,14 @@ const Item = (props) => {
 
     const renderItems = () => {
       return (
-        <li>
-            <input type="checkbox" onChange = {handleChange} checked={props.completed ? "checked":""}/>
-            <span>{props.name} -- {props.size} ${props.price} - {props.quantity} </span> 
-            <i onClick={handleRemove} style={{cursor: "pointer"}} class="fa fa-trash"></i>
-        </li>
+        <tr>
+            <td> <input type="checkbox" onChange = {handleChange} checked={props.completed ? "checked":""}/></td>
+            <td>{props.name}</td>
+            <td>{props.size}</td>
+            <td>${props.price}</td>
+            <td>{props.quantity}</td>
+            <td><i onClick={handleRemove} style={{cursor: "pointer"}} class="fa fa-trash"></i></td>
+        </tr>
       ) 
     }
 return renderItems()

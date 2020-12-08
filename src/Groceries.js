@@ -61,13 +61,21 @@ class Groceries extends React.Component {
                 addAnItem = {this.addItem}
                 groceryName = {this.state.groceries.itemName}
                 />
+                <table>
+                    <tr>
+                        <th>Completed</th>
+                        <th>Grocery Item</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                    </tr>
                 <List 
                 items = {this.state.groceries}
                 toggle = {this.toggle}
                 remove = {this.remove}
-                
-                
                 />
+                </table>
                 
             </div>
         )
